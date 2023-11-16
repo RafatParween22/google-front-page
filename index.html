@@ -1,55 +1,50 @@
-<!-- <!DOCTYPE html> -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Google home_Rafat </title>
-<link rel="stylesheet"type="text/css"href="stylesheet.css"media="screen"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Home_Rafat</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
 </head>
 <body>
-<header>
-<nav>
-<ul id="nav_bar">
-    <li class="nav-links" id="gmail"> <a href="https://gmail.com/"> Gmail</a></li>
-    <li class="nav-links"> <a href=""> Images</a></li>
-    <li id="sign_in"> <a href=""> sign in </a></li>
-</ul>
-</nav>
-</header>
+  <header>
+    <nav>
+      <ul id="nav_bar">
+        <li class="nav-links"> <a> Gmail</a></li>
+        <li class="nav-links"> <a href=""> Images</a></li>
+        <li id="sign_in"> <a href=""> Sign In </a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="google">
-<img src="google.png" style="border: 2px solid ;" class="pitchure" alt="wait image is loading"/>
-</div>
+  <div class="google">
+    <img src="google.png" style="border: 2px solid;" class="picture" alt="Wait, image is loading"/>
+  </div>
 
-<div class="form">
-<form>
-    <input type="text"  placeholder="Feel Free to search"/>
+  <div class="form">
+    <form id="frmsearch">
+      <input type="text" placeholder="Feel Free to Search" id="txtsearch"/>
+    </form>
+  </div>
 
+  <div class="buttons">
+    <input type="submit" value="Google Search" id="google_search">
+    <input type="submit" value="I am Feeling Lucky" id="i_am_feeling_lucky">
+  </div>
 
-</div>
-<div class="buttons">
-<input type="submit" value="Google search" id="google_search">
-<input type="submit" value="I am feeling luckey" id="i am feeling luckey">
-</div>
-<script type="text/javascript">
-document.getElementById("frmsearch").onsubmit=function() {
-    window.location="http://www.google.com/search?q="+document.getElementById("txtsearch").value;
-    return false;
-}
-</script>
-<footer>
-<ul class="footer-left">
-<li> <a href=""> Addvertising</a> </li>
-<li> <a href=""> Business</a> </li>
-<li> <a href=""> About</a> </li>
-</ul>
-<ul class="footer-right">
-<li> <a href=""> Privacy</a> </li>
-<li> <a href=""> Terms</a> </li>
-<li> <a href=""> Setting</a> </li>
+  <footer>
+    <ul class="footer-left">
+      <li> <a href=""> Advertising</a> </li>
+      <li> <a href=""> Business</a> </li>
+      <li> <a href=""> About</a> </li>
+    </ul>
+    <ul class="footer-right">
+      <li> <a href=""> Privacy</a> </li>
+      <li> <a href=""> Terms</a> </li>
+      <li> <a href=""> Settings</a> </li>
+    </ul>
+  </footer>
 
-
-</ul>
-</form>
-</footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
